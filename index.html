@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafees Shaikh's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+
+        /* Skills */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .skills-list li {
+            background: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #34495e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        /* Resume and Contact Section */
+        #resume-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        #resume, #contact {
+            flex: 1 1 400px;
+            background: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #resume .btn {
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #resume .btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="your photo.jpg" alt="Nafees Shaikh" class="profile-photo">
+            <h1>Nafees Shaikh</h1>
+            <p>Data Science Student | Machine Learning Enthusiast | Problem Solver</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="section fade-in">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Data Science student with a strong foundation in machine learning, data analysis, and image processing.
+                I have developed innovative projects like a signature and fingerprint matching system, and I am eager to solve real-world problems with data.
+            </p>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div id="project-list">
+                <div class="project-card">
+                    <h3>Signature and Fingerprint Matching System</h3>
+                    <p>
+                        Developed a GUI-based application using Python, Tkinter, and OpenCV for biometric authentication. The system compares images based on ORB feature extraction.
+                    </p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Text Processing Tool</h3>
+                    <p>
+                        Built a Python-based tool for text summarization, translation (20+ languages), and text-to-speech using Tkinter GUI.
+                    </p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Tableau</li>
+                <li>Microsoft Office</li>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+        <div id="resume-contact">
+            <section id="resume">
+                <h2>Resume</h2>
+                <p>Click below to view or download my resume:</p>
+                <div>
+                    <a href="your-resume.pdf" target="_blank" class="btn">Show Resume</a>
+                    <a href="your-resume.pdf" download class="btn">Download Resume</a>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><strong>Phone:</strong> <a href="tel:+9975584833">+9975584833</a></p>
+                <p><strong>Email:</strong> <a href="mailto:nafisshaikh114@gmail.com">nafisshaikh114@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nafees-shaikh-441405251" target="_blank">linkedin.com/in/nafees-shaikh</a></p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <h4>&copy; 2024 Nafees Shaikh | All Rights Reserved</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mohdnafees.shaikh.906?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/nafees-shaikh-441405251" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Heusvsusvsu/nafees.github.io" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/sh123.nafees?igsh=ZW9hN3FmZjFhc29j" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
